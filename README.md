@@ -37,12 +37,4 @@ This project performs sentiment analysis on Amazon-style product reviews using *
 - **Precision (Negative/Positive)**: 0.95 / 0.90
 - **Recall (Negative/Positive)**: 0.90 / 0.95
 
----
 
-## 🧪 Try It Yourself
-
-```python
-def predict_sentiment(text):
-    cleaned = clean_text(text)
-    vec = vectorizer.transform([cleaned])
-    return model.predict(vec)[0]
